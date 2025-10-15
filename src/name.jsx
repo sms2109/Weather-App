@@ -41,7 +41,7 @@ function Name() {
   };
 
   const displayedName =
-    count === 0 ? "कृपया बटन दबाएँ" : `${count}. ${radhaNames[count - 1]}`;
+    count === 0 ? "!!श्री राधा जी के 28 नाम!!" : `${count}. ${radhaNames[count - 1]}`;
 
   return (
     <div className="container">
