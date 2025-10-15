@@ -44,7 +44,7 @@ body {
 @media (max-width: 480px) {
   .heading {
     font-size: 1.8rem;
-    margin-bottom: 26rem;
+    margin-bottom: 1rem;
   }
 
   .btn {
