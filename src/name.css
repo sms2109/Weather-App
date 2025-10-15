@@ -1,0 +1,59 @@
+body {
+  background-image: url("https://m.media-amazon.com/images/I/511N9mIB8lL._UF1000,1000_QL80_.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  
+}
+
+/* Center everything nicely */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  text-align: center;
+  
+}
+
+/* Heading style */
+.heading {
+  color: #f8067f; /* Radha pink */
+
+  margin-bottom: 32rem;
+  padding: 0 1rem;
+}
+
+
+/* 🌐 RESPONSIVE STYLES */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .heading {
+    
+    margin-bottom: 45rem;
+  }
+
+  
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.8rem;
+    margin-bottom: 26rem;
+  }
+
+  .btn {
+    font-size: 0.9rem !important;
+    padding: 0.4rem 1.2rem !important;
+    
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
