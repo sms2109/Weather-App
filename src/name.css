@@ -23,7 +23,7 @@ body {
 .heading {
   color: #f8067f; /* Radha pink */
 
-  margin-bottom: 1rem;
+  margin-bottom: 32rem;
   padding: 0 1rem;
 }
 
@@ -34,7 +34,7 @@ body {
 @media (max-width: 700px) {
   .heading {
     
-    margin-bottom: 1rem;
+    margin-bottom: 60rem;
   }
 
   
@@ -44,7 +44,7 @@ body {
 @media (max-width: 480px) {
   .heading {
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 30rem;
   }
 
   .btn {
