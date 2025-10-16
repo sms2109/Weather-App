@@ -9,8 +9,8 @@ function App() {
   
   return (
     <>
-      {/* <Name/> */}
-      <WeatherApp/>
+      <Name/>
+      {/* <WeatherApp/> */}
     </>
   );
 }
