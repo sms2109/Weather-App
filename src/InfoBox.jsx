@@ -88,7 +88,7 @@ export default function InfoBox({info}) {
             </Button>
             <Button
               size="small"
-              href="https://github.com/sms2109?tab=repositories"
+              href="https://github.com/sms2109/Weather-App"
               target="_blank"
               rel="noopener noreferrer"
             >
