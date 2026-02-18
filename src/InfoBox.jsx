@@ -8,6 +8,30 @@ import WbSunnySharpIcon from '@mui/icons-material/WbSunnySharp';
 import SevereColdIcon from '@mui/icons-material/SevereCold';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 import "./InfoBox.css";
+import html2canvas from "html2canvas";
+
+const handleShare = async () => {
+  const element = document.getElementById("weather-screen");
+
+  // 📸 Take screenshot
+  const canvas = await html2canvas(element);
+  const blob = await new Promise((resolve) =>
+    canvas.toBlob(resolve, "image/png")
+  );
+
+  const file = new File([blob], "weather.png", { type: "image/png" });
+
+  // 📤 Share using Web Share API
+  if (navigator.share) {
+    await navigator.share({
+      title: "Weather App by Karan",
+      text: "Check out this weather update 🌤️",
+      files: [file],
+    });
+  } else {
+    alert("Sharing not supported on this browser");
+  }
+};
 
 export default function InfoBox({info}) {
   
@@ -59,8 +83,17 @@ export default function InfoBox({info}) {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button size="small" onClick={handleShare}>
+               Share
+            </Button>
+            <Button
+              size="small"
+              href="https://github.com/sms2109?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn More
+            </Button>
           </CardActions>
         </Card>
       </div>
