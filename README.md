@@ -5,8 +5,8 @@ A modern **React + Vite Weather Application** that allows users to search for re
 ---
 
 ## 🚀 Live Demo
-👉 https://weather-app-karan.vercel.app  
-*(Replace with your actual Vercel URL)*
+👉 [https://weather-app-karan.vercel.app  ](https://weather-app-tan-chi-37.vercel.app/)
+
 
 ---
 
